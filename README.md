@@ -12,6 +12,7 @@ export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$
 smartdns安装:
 
 将smartdns,smartdns.conf和china-list通过winscp放到/data/other_vol/
+并创建一个cache文件夹存放缓存文件
 
 运行命令：
 ```
