@@ -4,7 +4,7 @@ shellcrash安装：
 export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
 在/data/other_vol/目录下安装，配置好后将dns服务器修改为127.0.0.1:5553(AdGuardHome)
 
-smartdns安装(建议将配置文件的国内dns改成自己地区的dns):
+smartdns安装:
 将smartdns,smartdns.conf和china-list通过winscp放到/data/other_vol/
 通过命令运行
 /data/other_vol/smartdns -c /data/other_vol/smartdns.conf
