@@ -1,4 +1,4 @@
-<font size="6">小米be6500pro路由器，smartdns分流+adguardhome过滤广告+shellcrash科学上网自用配置</font>
+<font size="12">小米be6500pro路由器，smartdns分流+adguardhome过滤广告+shellcrash科学上网自用配置</font>
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 shellcrash安装：
