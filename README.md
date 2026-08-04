@@ -32,10 +32,15 @@ AdGuardHome 常用命令：
 ```
 /data/other_vol/AdGuardHome -s start
 ```
-停止服务：/data/other_vol/AdGuardHome -s stop
 
-重启服务：/data/other_vol/AdGuardHome -s restart
-
+停止服务：
+```
+/data/other_vol/AdGuardHome -s stop
+```
+重启服务：
+```
+/data/other_vol/AdGuardHome -s restart
+```
 后台管理端口3000,监听端口5553
 
 上游服务器设置127.0.0.1:5335(SmartDNS)
@@ -43,7 +48,7 @@ AdGuardHome 常用命令：
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 运行好后要通过iptables将53端口指向smartdns(5335)
-
+```
 iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5335
 
 iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5335
@@ -51,7 +56,7 @@ iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5335
 ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5335
 
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5335
-
+```
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 后续更新
