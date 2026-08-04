@@ -27,11 +27,16 @@ ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5335
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5335
 
 后续更新
+
 shellcrash可以通过ssh输入crash更新
+
 AdguardHome要在官方github:https://github.com/AdguardTeam/AdGuardHome/releases   下载AdGuardHome_linux_amd64.tar.gz
+
 下载后解压通过upx压缩https://github.com/upx/upx/releases
+
 smartdns在官方github:https://github.com/pymumu/smartdns/releases                下载smartdns-aarch64
 也是通过upx压缩再上传到/data/other_vol/
+
 china-list使用v2ray-rules-dat规则集:https://github.com/Loyalsoldier/v2ray-rules-dat/releases
 
 PS:如果还有问题就问AI吧
