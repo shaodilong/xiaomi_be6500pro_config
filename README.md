@@ -57,7 +57,7 @@ shellcrash可以通过ssh输入crash中更新
 
 AdguardHome要在官方github:https://github.com/AdguardTeam/AdGuardHome/releases   下载AdGuardHome_linux_amd64.tar.gz
 
-下载后解压通过upx压缩https://github.com/upx/upx/releases
+下载后解压通过upx压缩https://github.com/upx/upx/releases   怎么用自己搜一下就好了
 
 smartdns在官方github:https://github.com/pymumu/smartdns/releases                下载smartdns-aarch64
 也是通过upx压缩再上传到/data/other_vol/
