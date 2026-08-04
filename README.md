@@ -6,7 +6,7 @@ export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$
 
 在/data/other_vol/目录下安装，配置好后将dns服务器修改为127.0.0.1:5553(AdGuardHome)
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------
 smartdns安装:
 
 将smartdns,smartdns.conf和china-list通过winscp放到/data/other_vol/
@@ -20,7 +20,7 @@ smartdns安装:
 killall smartdns
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------
 AdGuardHome安装:
 
 将AdGuardHome，AdGuardHome.yaml通过winscp放到/data/other_vol/
@@ -37,6 +37,8 @@ AdGuardHome 常用命令：
 
 上游服务器设置127.0.0.1:5335(SmartDNS)
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 运行好后要通过iptables将53端口指向smartdns(5335)
 
 iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5335
@@ -48,7 +50,7 @@ ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5335
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5335
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------
 后续更新
 
 shellcrash可以通过ssh输入crash中更新
