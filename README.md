@@ -6,6 +6,7 @@ export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$
 
 在/data/other_vol/目录下安装，配置好后将dns服务器修改为127.0.0.1:5553(AdGuardHome)
 
+
 smartdns安装:
 
 将smartdns,smartdns.conf和china-list通过winscp放到/data/other_vol/
@@ -17,6 +18,8 @@ smartdns安装:
 停止运行
 
 killall smartdns
+
+
 
 AdGuardHome安装:
 
@@ -45,6 +48,7 @@ ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5335
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5335
 
 
+
 后续更新
 
 shellcrash可以通过ssh输入crash中更新
@@ -57,6 +61,7 @@ smartdns在官方github:https://github.com/pymumu/smartdns/releases             
 也是通过upx压缩再上传到/data/other_vol/
 
 china-list使用v2ray-rules-dat规则集:https://github.com/Loyalsoldier/v2ray-rules-dat/releases
+
 
 PS:如果还有问题就问AI吧
 
