@@ -1,5 +1,6 @@
 小米be6500pro路由器，smartdns分流+adguardhome过滤广告+shellcrash科学上网自用配置
 
+--------------------------------------------------------------------------------------------------------------------------------------------
 shellcrash安装：
 
 export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
