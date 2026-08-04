@@ -26,8 +26,6 @@ AdGuardHome安装:
 
 将AdGuardHome，AdGuardHome.yaml通过winscp放到/data/other_vol/
 
-AdGuardHome 常用命令：
-
 启动服务：
 ```
 /data/other_vol/AdGuardHome -s start
