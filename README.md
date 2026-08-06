@@ -26,7 +26,7 @@ killall smartdns
 --------------------------------------------------------------------------------------------------------------------------------------------
 AdGuardHome安装:
 
-将AdGuardHome，AdGuardHome.yaml通过winscp放到/data/other_vol/
+将AdGuardHome通过winscp放到/data/other_vol/
 
 启动服务：
 ```
@@ -41,7 +41,7 @@ AdGuardHome安装:
 ```
 /data/other_vol/AdGuardHome -s restart
 ```
-后台管理端口3000,监听端口5553
+设置后台管理端口3000,监听端口5553
 
 上游服务器设置127.0.0.1:5335(SmartDNS)
 
