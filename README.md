@@ -6,7 +6,8 @@ shellcrash安装：
 ```
 export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
 ```
-在/data/other_vol/目录下安装，配置好后将dns服务器修改为127.0.0.1:5553(AdGuardHome)
+在/data/other_vol/目录下安装
+配置好后通过在ssh,输入crash->2 功能设置->2 DNS设置->7 DNS劫持端口设置5553(AdguardHome)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 smartdns安装:
